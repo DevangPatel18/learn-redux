@@ -11,11 +11,11 @@ import posts from './data/posts';
 // create an object for the defailt data
 const defaultState = {
   posts,
-  comments
-}
+  comments,
+};
 
 const store = createStore(rootReducer, defaultState);
 
-export const history = syncHistoryWithStore(browserHistory, store)
+export const history = syncHistoryWithStore(browserHistory, store);
 
 export default store;
